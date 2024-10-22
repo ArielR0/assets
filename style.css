@@ -1,0 +1,145 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    max-width: 1280px;
+    display: flex;
+    margin:0 auto; 
+    padding:0 2%;
+    flex-wrap: wrap;
+}
+
+html,body{
+    height:100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+.logo{
+    
+    width: 50%;
+
+}
+
+.menu{
+    width: 50%;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold; 
+    margin-right: 15px;
+
+}
+
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: -450px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px; 
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #0044ff;
+    background-color:mediumblue
+   
+}
+
+body{
+    min-height: 100vh;
+    background-color:azure;
+}
+
+.social-media{
+    position:absolute;
+    left: 640px;
+    top: 120px;
+}
+
+.social-media img{
+      display: block;
+      width: 40px;
+      margin: 10px 0;
+}
+
+.texto-sobre{
+    margin-top: 100px;
+}
+
+.texto-sobre h1{
+    font-size: 50px;
+}
+
+.texto-sobre p{
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.texto-sobre button{
+    border: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100px;
+    height: 60px;
+    color: white;
+    background-color:mediumblue
+    
+    
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bolhas{
+    position: absolute;
+    display: flex;
+}
+
+.bolhas span{
+    width: 30px;
+    height: 30px;
+    background: rgb(0, 204, 255);
+    margin:0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0044ff44,
+    0 0 50px #0044ff,
+    0 0 100px #0044ff; 
+    animation: animar calc(150s / var(--i)) infinite;
+}
+
+@keyframes animar {
+    0%{
+        transform: translateY(100vh); scale: (0);
+    }
+    100%{
+        transform: translateY(-10vh); scale: (1);
+    }
+     }
+.bolhas span:nth-of-type(even) {
+    background: #2dc3ff;
+    box-shadow: 0 0 0 10px #2dc3ff44,
+    0 0 50px #2dc3ff,
+    0 0 100px #2dc3ff; 
+}
